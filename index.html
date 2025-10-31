@@ -1,107 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="A product of emergent.sh">
-    <title>Emergent | Fullstack App</title>
-    <script src="js/emergent-main.js"></script>
-    <script src="js/rrweb.min.js"></script>
-    <script src="js/rrweb-recorder-20250919-1.js"></script>
-    <script>
-        // Only load visual edit scripts when inside an iframe and visual edits are enabled
-        if (window.self !== window.top && 'true' === 'true') {
-            // Load debug monitor script
-            var debugScript = document.createElement('script');
-            debugScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';
-            document.head.appendChild(debugScript);
-
-            // Configure Tailwind
-            window.tailwind = window.tailwind || {};
-            tailwind.config = {
-                corePlugins: { preflight: false },
-            };
-
-            // Load Tailwind CDN
-            var tailwindScript = document.createElement('script');
-            tailwindScript.src = 'https://cdn.tailwindcss.com';
-            document.head.appendChild(tailwindScript);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Tamim Sarkar Tamim - Technical & Entrepreneurial Portfolio</title>
+    <!-- Loading Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* Slight off-white background */
         }
-    </script>
-    <script defer src="js/bundle.js"></script>
+        /* Scroll padding for section IDs - Important for fixed header */
+        :target {
+            scroll-padding-top: 5rem; 
+            display: block; 
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
 </head>
-<body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-        <img src="DSC04701-697976699-2.jpg" alt="A man wearing a white kurta and a cap" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
-    </div>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar (Header) -->
+    <header id="navbar" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">
+                        Tamim Sarkar
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#about" class="text-base font-medium text-gray-500 hover:text-indigo-600 transition duration-300">About Me</a>
+                    <a href="#education" class="text-base font-medium text-gray-500 hover:text-indigo-600 transition duration-300">Education</a>
+                    <a href="#skills" class="text-base font-medium text-gray-500 hover:text-indigo-600 transition duration-300">Skills</a>
+                    <a href="#projects" class="text-base font-medium text-gray-500 hover:text-indigo-600 transition duration-300">Expertise</a>
+                    <a href="#contact" class="text-base font-medium text-gray-500 hover:text-indigo-600 transition duration-300">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="mobile-menu-button" type="button" class="bg-gray-100 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-lg transition duration-300">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon for menu -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">About Me</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Education</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Expertise</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section-padding flex items-center min-h-screen pt-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Intro Text -->
+                <div class="order-2 md:order-1">
+                    <p class="text-indigo-600 font-semibold text-lg mb-2">Welcome, I'm</p>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 mb-4">
+                        Md Tamim Sarkar Tamim
+                    </h1>
+                    <p class="text-3xl md:text-4xl text-gray-600 mb-6">
+                        Skilled Technician & Aspiring Entrepreneur
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 max-w-lg">
+                        My goal is to build a successful service-based business leveraging my practical expertise in Refrigeration, Air Conditioning, and Car Maintenance, combined with modern Digital Marketing skills.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#skills" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300">
+                            View My Skills
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-xl hover:bg-indigo-50 transform hover:scale-105 transition duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image (Placeholder) -->
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-300 rounded-full overflow-hidden shadow-2xl relative">
+                        <!-- Place your image here, currently a placeholder -->
+                        <img src="https://placehold.co/800x800/6366f1/ffffff?text=Profile+Pic" alt="Profile Picture" onerror="this.src='https://placehold.co/800x800/6366f1/ffffff?text=Profile+Pic'" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">About Me & My Goals</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Hardworking, responsible, and committed to learning new technologies for independent success.
+                </p>
+
+                <div class="lg:flex lg:space-x-12">
+                    <div class="lg:w-2/3 space-y-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Career Objective</h3>
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            My primary objective is to build a career as a skilled technician and successfully establish my own online service-based business. This venture will focus on critical services like Refrigeration, Air Conditioning Servicing, and Car Maintenance. I am driven by the pursuit of success and independence, leveraging a blend of practical and digital skills.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 pt-4">Personal Qualities & Interests</h3>
+                        <ul class="list-disc list-inside text-gray-700 leading-relaxed text-lg pl-5 space-y-2">
+                            <li>Qualities: Hardworking and Responsible, Eager to Learn New Technologies, Customer Service Oriented.</li>
+                            <li>Hobbies/Interests: Reading, Exploring the Internet, and continuously improving my English communication.</li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/3 mt-10 lg:mt-0">
+                        <div class="p-6 bg-gray-50 rounded-xl shadow-lg border border-gray-200">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Personal Information</h3>
+                            <ul class="space-y-3 text-lg text-gray-700">
+                                <li><span class="font-medium text-indigo-600">Full Name:</span> Md Tamim Sarkar Tamim</li>
+                                <li><span class="font-medium text-indigo-600">Date of Birth:</span> 16 August 2005</li>
+                                <li><span class="font-medium text-indigo-600">Address:</span> Binodpur Bazar, Rajshahi</li>
+                                <li><span class="font-medium text-indigo-600">Email:</span> mdtamimsarkartamim@gmail.com</li>
+                                <li><span class="font-medium text-indigo-600">Phone:</span> 01784658666</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section (New) -->
+        <section id="education" class="section-padding bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Academic Background</h2>
+                
+                <div class="space-y-8 max-w-4xl mx-auto">
+                    <div class="flex flex-col md:flex-row bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                        <div class="md:w-1/4 text-indigo-600 font-semibold text-lg mb-2 md:mb-0">2022</div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-xl font-bold text-gray-900">Dakhil (Secondary)</h3>
+                            <p class="text-gray-600 italic">Budpara Alim Madrasa, Madrasa Board</p>
+                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.50</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                        <div class="md:w-1/4 text-indigo-600 font-semibold text-lg mb-2 md:mb-0">2024</div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-xl font-bold text-gray-900">Alim (Higher Secondary)</h3>
+                            <p class="text-gray-600 italic">Budpara Alim Madrasa, Madrasa Board</p>
+                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.07</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Core Skills</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    A combination of hands-on technical abilities and digital marketing knowledge.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <!-- Skill Card 1: Technical Expertise -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-red-500">🔧</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">R&AC Servicing</p>
+                    </div>
+                    <!-- Skill Card 2: Vehicle Maintenance -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-gray-600">🚗</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">Car Maintenance</p>
+                    </div>
+                    <!-- Skill Card 3: Social Media Marketing -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-blue-600">📈</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">Social Media Marketing</p>
+                    </div>
+                    <!-- Skill Card 4: MS Office -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-green-700">📄</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">MS Office</p>
+                    </div>
+                    <!-- Skill Card 5: Languages -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-yellow-600">🗣️</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">Bengali, English, Arabic</p>
+                    </div>
+                    <!-- Skill Card 6: Basic Programming -->
+                    <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                        <div class="text-4xl mb-3 text-purple-600">💻</div>
+                        <p class="text-lg font-semibold text-gray-800 text-center">Basic Programming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise/Projects Section (Replaced old projects) -->
+        <section id="projects" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Hands-On Expertise</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Practical application of my skills towards my business goals.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project Card 1: Automobile Maintenance -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border border-gray-200">
+                        <img src="https://placehold.co/600x400/8c8cf7/ffffff?text=Automotive+Upkeep" alt="Automotive Maintenance" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Automotive Maintenance & Driving</h3>
+                            <p class="text-gray-600 mb-4">Proficiency in car driving and maintenance, with hands-on experience in vehicle upkeep, basic repair, and ensuring vehicle longevity. This forms a core service offering.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Car Driving</span>
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Vehicle Upkeep</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: R&AC Service Readiness -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border border-gray-200">
+                        <img src="https://placehold.co/600x400/66c29b/ffffff?text=AC+and+Refrigeration" alt="R&AC Service Readiness" class="w-full h-56 object-cover transition duration-500 border border-gray-200">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Refrigeration & A/C Service Planning</h3>
+                            <p class="text-gray-600 mb-4">Acquired knowledge in Refrigeration & Air Conditioning Servicing and Maintenance, preparing to offer professional installation, diagnostics, and repair as a key business stream.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Technical Service</span>
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Maintenance Planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Online Business Development -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border border-gray-200">
+                        <img src="https://placehold.co/600x400/f8a1d7/ffffff?text=Digital+Strategy" alt="Online Business Development" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Digital Marketing Strategy</h3>
+                            <p class="text-gray-600 mb-4">Developing a digital presence using skills in Social Media Marketing, Advertising, and Security to launch and promote the technical service business online.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">SM Advertising</span>
+                                <span class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Business Launch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Contact</h2>
+                <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    I am open to discussions about business opportunities, projects, or partnerships. Get in touch with me.
+                </p>
+
+                <div class="max-w-xl mx-auto p-8 bg-white rounded-xl shadow-2xl border border-indigo-200">
+                    <form id="contact-form" action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-300"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 transform hover:scale-[1.01]">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="contact-message" class="mt-4 hidden p-3 rounded-lg text-sm text-center font-medium bg-green-100 text-green-800">
+                        Your message has been sent successfully!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- Social Media Icons (Updated with your links) -->
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/mdtamimsarkartamim6" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-300" aria-label="Facebook Profile">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.493v-9.294h-3.13v-3.626h3.13v-2.193c0-3.1 1.89-4.788 4.659-4.788 1.325 0 2.464.099 2.793.143v3.235h-1.921c-1.5 0-1.791.716-1.791 1.764v2.321h3.61l-.47 3.626h-3.14l.004 9.294h6.115c.732 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/mdtamimsarkartamim404/" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-300" aria-label="Instagram Profile">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.064 1.144.047 1.745.247 2.227.424.482.179.897.427 1.267.797.37.37.618.785.797 1.267.177.482.377 1.083.424 2.227.052 1.266.064 1.646.064 4.85s-.012 3.584-.064 4.85c-.047 1.144-.247 1.745-.424 2.227-.179.482-.427.897-.797 1.267-.37.37-.785.618-1.267.797-.482.177-1.083.377-2.227.424-1.266.052-1.646.064-4.85.064s-3.584-.012-4.85-.064c-1.144-.047-1.745-.247-2.227-.424-.482-.179-.897-.427-1.267-.797-.37-.37-.618-.785-.797-1.267-.177-.482-.377-1.083-.424-2.227-.052-1.266-.064-1.646-.064-4.85s.012-3.584.064-4.85c.047-1.144.247-1.745.424-2.227.179-.482.427-.897.797-1.267.37-.37.785-.618 1.267-.797.482-.177 1.083-.377 2.227-.424 1.266-.052 1.646-.064 4.85-.064zm0 2.163c-3.266 0-3.673.013-4.942.066-1.343.056-2.316.273-3.116.597-.8.324-1.455.776-2.115 1.436-.66.66-.995 1.315-1.319 2.115-.324.8-.541 1.773-.597 3.116-.053 1.269-.066 1.676-.066 4.942s.013 3.673.066 4.942c.056 1.343.273 2.316.597 3.116.324.8.776 1.455 1.436 2.115.66.66 1.315.995 2.115 1.319.8.324 1.773.541 3.116.597 1.269.053 1.676.066 4.942.066s3.673-.013 4.942-.066c1.343-.056 2.316-.273 3.116-.597.8-.324 1.455-.776 2.115-1.436.66-.66.995-1.315 1.319-2.115.324-.8.541-1.773.597-3.116-.053-1.269-.066-1.676-.066-4.85s.013-3.673.066-4.942c.056-1.343.273-2.316.597-3.116.324-.8.776-1.455-1.436-2.115-.66-.66-1.315-.995-2.115-1.319-.8-.324-1.773-.541-3.116-.597-1.269-.053-1.676-.066-4.942-.066zm0 2.163c3.266 0 3.673.013 4.942.066s2.316.273 3.116.597c.8.324 1.455.776 2.115 1.436.66.66.995 1.315 1.319 2.115.324.8.541 1.773.597 3.116.053 1.269.066 1.676.066 4.942s-.013 3.673-.066 4.942c-.056 1.343-.273 2.316-.597 3.116-.324.8-.776 1.455-1.436 2.115-.66.66-1.315.995-2.115 1.319-.8.324-1.773.541-3.116.597-1.269.053-1.676.066-4.942.066s-3.673-.013-4.942-.066c-1.343-.056-2.316-.273-3.116-.597-.8-.324-1.455-.776-2.115-1.436-.66-.66-1.315-.995-2.115-1.319-.8-.324-1.773-.541-3.116-.597-1.269-.053-1.676-.066-4.942-.066zm0 3.163c-3.18 0-5.76 2.58-5.76 5.76s2.58 5.76 5.76 5.76 5.76-2.58 5.76-5.76-2.58-5.76-5.76-5.76zm0 9.163c-1.875 0-3.395-1.52-3.395-3.395s1.52-3.395 3.395-3.395 3.395 1.52 3.395 3.395-1.52 3.395-3.395 3.395zm6.54-12.222c0 .667-.542 1.209-1.209 1.209s-1.209-.542-1.209-1.209c0-.667.542-1.209 1.209-1.209s1.209.542 1.209 1.209z"/></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/sk-tamim-ikbol/" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-300" aria-label="LinkedIn Profile">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.568-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.723 7 3.559v5.676z"/></svg>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">
+                &copy; <span id="current-year"></span> Md Tamim Sarkar Tamim. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript For Interactivity -->
     <script>
-        !(function (t, e) {
-            var o, n, p, r;
-            e.__SV ||
-                ((window.posthog = e),
-                (e._i = []),
-                (e.init = function (i, s, a) {
-                    function g(t, e) {
-                        var o = e.split(".");
-                        2 == o.length && ((t = t[o[0]]), (e = o[1])),
-                            (t[e] = function () {
-                                t.push(
-                                    [e].concat(
-                                        Array.prototype.slice.call(
-                                            arguments,
-                                            0,
-                                        ),
-                                    ),
-                                );
-                            });
-                    }
-                    ((p = t.createElement("script")).type =
-                        "text/javascript"),
-                        (p.crossOrigin = "anonymous"),
-                        (p.async = !0),
-                        (p.src =
-                            s.api_host.replace(
-                                ".i.posthog.com",
-                                "-assets.i.posthog.com",
-                            ) + "/static/array.js"),
-                        (r =
-                            t.getElementsByTagName(
-                                "script",
-                            )[0]).parentNode.insertBefore(p, r);
-                    var u = e;
-                    for (
-                        void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
-                            u.people = u.people || [],
-                            u.toString = function (t) {
-                                var e = "posthog";
-                                return (
-                                    "posthog" !== a && (e += "." + a),
-                                    t || (e += " (stub)"),
-                                    e
-                                );
-                            },
-                            u.people.toString = function () {
-                                return u.toString(1) + ".people (stub)";
-                            },
-                            o =
-                                "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
-                                    " ",
-                                ),
-                            n = 0;
-                        n < o.length;
-                        n++
-                    )
-                        g(u, o[n]);
-                    e._i.push([i, s, a]);
-                }),
-                (e.__SV = 1));
-        })(document, window.posthog || []);
-        posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
-            api_host: "https://us.i.posthog.com",
-            person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+        // JavaScript for the copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
+
+        // --- Smooth Scrolling Implementation (Fix for broken navigation) ---
+        // Attaches a click handler to all links that start with '#' (anchor links)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            // Checks if the link is not just a root link ('#')
+            if (anchor.getAttribute('href').length > 1) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Programmatically scroll smoothly to the target section
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                        // Ensure mobile menu closes after navigation click
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            }
+        });
+        // --- End Smooth Scrolling Implementation ---
+
+        // Contact Form Submission (A simple, client-side simulation)
+        const contactForm = document.getElementById('contact-form');
+        const contactMessage = document.getElementById('contact-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // In a real application, data would be sent to a server here (e.g., Firebase or an API)
+            
+            // Displaying success message
+            contactMessage.textContent = 'Thank you! I have received your message and will reply soon.';
+            contactMessage.classList.remove('hidden');
+            contactMessage.classList.add('bg-green-100', 'text-green-800');
+            
+            // Clearing the form
+            contactForm.reset();
+
+            // Hiding the message after 5 seconds
+            setTimeout(() => {
+                contactMessage.classList.add('hidden');
+            }, 5000);
+        });
+
     </script>
 </body>
 </html>
