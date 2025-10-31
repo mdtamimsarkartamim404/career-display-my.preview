@@ -1,872 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md Tamim Sarkar Tamim - Technical Service & Entrepreneurship</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Using a more versatile and modern font */
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-        /* Using a different font for headings/display for contrast and style */
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
-        body {
-            font-family: "Inter", sans-serif;
-            scroll-behavior: smooth;
-            /* Changed body background to pure white */
-            background-color: #ffffff;
-            color: #1f2937; /* Darker text for better contrast */
-        }
-        h1,
-        h2,
-        h3 {
-            font-family: "Montserrat", sans-serif; /* Applied a distinct font to headings */
-        }
-        /* --- NEW PROFESSIONAL COLOR PALETTE --- */
-        .primary-color {
-            color: #1e3a8a; /* Deep Navy Blue - Corporate, Reliable */
-        }
-        .primary-bg {
-            background-color: #1e3a8a;
-        }
-        .primary-hover:hover {
-            background-color: #1d4ed8; /* Slightly lighter Navy for hover */
-        }
-        .accent-color {
-            color: #3b82f6; /* Azure Blue - Modern, Trustworthy Accent */
-        }
-        /* --- Social Media Theme Colors (Custom CSS) --- */
-        .social-link {
-            color: #4b5563; /* Tailwind's gray-600 for a consistent gray look */
-            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-        }
-        .social-link:hover {
-            transform: scale(1.1);
-            color: #1f2937; /* Tailwind's gray-900 for a darker hover effect */
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Tamim Sarkar Tamim - Technical Service & Entrepreneurship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Using a more versatile and modern font */
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+        /* Using a different font for headings/display for contrast and style */
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
+        body {
+            font-family: "Inter", sans-serif;
+            scroll-behavior: smooth;
+            /* Changed body background to pure white */
+            background-color: #ffffff;
+            color: #1f2937; /* Darker text for better contrast */
+        }
+        h1,
+        h2,
+        h3 {
+            font-family: "Montserrat", sans-serif; /* Applied a distinct font to headings */
+        }
+        /* --- NEW PROFESSIONAL COLOR PALETTE --- */
+        .primary-color {
+            color: #1e3a8a; /* Deep Navy Blue - Corporate, Reliable */
+        }
+        .primary-bg {
+            background-color: #1e3a8a;
+        }
+        .primary-hover:hover {
+            background-color: #1d4ed8; /* Slightly lighter Navy for hover */
+        }
+        .accent-color {
+            color: #3b82f6; /* Azure Blue - Modern, Trustworthy Accent */
+        }
+        /* --- Social Media Theme Colors (Custom CSS) --- */
+        .social-link {
+            color: #4b5563; /* Tailwind's gray-600 for a consistent gray look */
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+            color: #1f2937; /* Tailwind's gray-900 for a darker hover effect */
+        }
 
-        /* -------------------------------------- */
-        .shadow-custom {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Lighter, subtle shadow */
-        }
-        /* Scroll padding for section IDs - Important for fixed header */
-        :target {
-            scroll-padding-top: 5.5rem; /* Adjusted for a slightly taller header */
-        }
-        .section-padding {
-            padding-top: 6rem; /* Increased padding */
-            padding-bottom: 6rem;
-        }
-    </style>
+        /* -------------------------------------- */
+        .shadow-custom {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Lighter, subtle shadow */
+        }
+        /* Scroll padding for section IDs - Important for fixed header */
+        :target {
+            scroll-padding-top: 5.5rem; /* Adjusted for a slightly taller header */
+        }
+        .section-padding {
+            padding-top: 6rem; /* Increased padding */
+            padding-bottom: 6rem;
+        }
+    </style>
 </head>
 <body class="text-gray-800">
-    <header
-        id="navbar"
-        class="sticky top-0 z-50 bg-white shadow-lg transition-all duration-300"
-    >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-5 md:py-4">
-                <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a
-                        href="#"
-                        class="text-3xl font-extrabold primary-color hover:text-blue-700 transition duration-300"
-                    >
-                        Tamim Sarkar <span class="text-xl accent-color">.Dev</span>
-                    </a>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a
-                        href="#about"
-                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
-                        >About</a
-                    >
-                    <a
-                        href="#education"
-                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
-                        >Education</a
-                    >
-                    <a
-                        href="#skills"
-                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
-                        >Skills</a
-                    >
-                    <a
-                        href="#projects"
-                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
-                        >Expertise</a
-                    >
-                    <a
-                        href="#contact"
-                        class="px-4 py-1.5 border border-transparent rounded-full text-white primary-bg hover:primary-hover transition duration-300 font-semibold uppercase text-sm"
-                        >Contact</a
-                    >
-                </nav>
-                <div class="md:hidden">
-                    <button
-                        id="mobile-menu-button"
-                        type="button"
-                        class="bg-gray-100 p-2 inline-flex items-center justify-center text-gray-600 hover:text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:primary-color rounded-lg transition duration-300"
-                    >
-                        <span class="sr-only">Open main menu</span>
-                        <svg
-                            class="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <header
+        id="navbar"
+        class="sticky top-0 z-50 bg-white shadow-lg transition-all duration-300"
+    >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-5 md:py-4">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a
+                        href="#"
+                        class="text-3xl font-extrabold primary-color hover:text-blue-700 transition duration-300"
+                    >
+                        Tamim Sarkar <span class="text-xl accent-color">.Dev</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a
+                        href="#about"
+                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
+                        >About</a
+                    >
+                    <a
+                        href="#education"
+                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
+                        >Education</a
+                    >
+                    <a
+                        href="#skills"
+                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
+                        >Skills</a
+                    >
+                    <a
+                        href="#projects"
+                        class="text-base font-semibold text-gray-700 hover:primary-color transition duration-300"
+                        >Expertise</a
+                    >
+                    <a
+                        href="#contact"
+                        class="px-4 py-1.5 border border-transparent rounded-full text-white primary-bg hover:primary-hover transition duration-300 font-semibold uppercase text-sm"
+                        >Contact</a
+                    >
+                </nav>
+                <div class="md:hidden">
+                    <button
+                        id="mobile-menu-button"
+                        type="button"
+                        class="bg-gray-100 p-2 inline-flex items-center justify-center text-gray-600 hover:text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:primary-color rounded-lg transition duration-300"
+                    >
+                        <span class="sr-only">Open main menu</span>
+                        <svg
+                            class="h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        <div
-            id="mobile-menu"
-            class="hidden md:hidden bg-white border-t border-gray-100"
-        >
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                    href="#about"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
-                    >About</a
-                >
-                <a
-                    href="#education"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
-                    >Education</a
-                >
-                <a
-                    href="#skills"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
-                    >Skills</a
-                >
-                <a
-                    href="#projects"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
-                    >Expertise</a
-                >
-                <a
-                    href="#contact"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-white primary-bg hover:primary-hover text-center mt-2"
-                    >Contact</a
-                >
-            </div>
-        </div>
-    </header>
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a
+                    href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
+                    >About</a
+                >
+                <a
+                    href="#education"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
+                    >Education</a
+                >
+                <a
+                    href="#skills"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
+                    >Skills</a
+                >
+                <a
+                    href="#projects"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:primary-color"
+                    >Expertise</a
+                >
+                <a
+                    href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-white primary-bg hover:primary-hover text-center mt-2"
+                    >Contact</a
+                >
+            </div>
+        </div>
+    </header>
 
-    <main>
-        <section
-            id="hero"
-            class="section-padding flex items-center min-h-[90vh] pt-24"
-        >
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center"
-            >
-                <div class="order-2 md:order-1">
-                    <p
-                        class="accent-color font-bold text-xl mb-3 uppercase tracking-wider"
-                    >
-                        Entrepreneurial Technologist
-                    </p>
-                    <h1
-                        class="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none text-gray-900 mb-6"
-                    >
-                        Md Tamim <span class="primary-color">Sarkar</span>
-                    </h1>
-                    <p class="text-3xl md:text-4xl text-gray-700 mb-8 font-light">
-                        Specializing in
-                        <span class="font-medium primary-color"
-                            >R&AC, Car Maintenance</span
-                        >
-                        & <span class="font-medium accent-color">Digital Strategy</span>.
-                    </p>
-                    <p class="text-lg text-gray-600 mb-10 max-w-lg">
-                        My goal is to successfully launch and grow a high-quality,
-                        service-based business by combining practical technical skills
-                        with effective digital marketing strategies for independent
-                        success.
-                    </p>
-                    <div class="flex space-x-5">
-                        <a
-                            href="#projects"
-                            class="px-8 py-3 primary-bg text-white font-semibold rounded-full shadow-xl hover:primary-hover transform hover:scale-[1.03] transition duration-300 tracking-wide uppercase text-sm"
-                        >
-                            View My Expertise
-                        </a>
-                        <a
-                            href="#contact"
-                            class="px-8 py-3 border-2 border-primary-color text-primary-color font-semibold rounded-full hover:bg-blue-50 transform hover:scale-[1.03] transition duration-300 tracking-wide uppercase text-sm"
-                        >
-                            Let's Connect
-                        </a>
-                    </div>
-                </div>
+    <main>
+        <section
+            id="hero"
+            class="section-padding flex items-center min-h-[90vh] pt-24"
+        >
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center"
+            >
+                <div class="order-2 md:order-1">
+                    <p
+                        class="accent-color font-bold text-xl mb-3 uppercase tracking-wider"
+                    >
+                        Entrepreneurial Technologist
+                    </p>
+                    <h1
+                        class="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none text-gray-900 mb-6"
+                    >
+                        Md Tamim <span class="primary-color">Sarkar</span>
+                    </h1>
+                    <p class="text-3xl md:text-4xl text-gray-700 mb-8 font-light">
+                        Specializing in
+                        <span class="font-medium primary-color"
+                            >R&AC, Car Maintenance</span
+                        >
+                        & <span class="font-medium accent-color">Digital Strategy</span>.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-10 max-w-lg">
+                        My goal is to successfully launch and grow a high-quality,
+                        service-based business by combining practical technical skills
+                        with effective digital marketing strategies for independent
+                        success.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a
+                            href="#projects"
+                            class="px-8 py-3 primary-bg text-white font-semibold rounded-full shadow-xl hover:primary-hover transform hover:scale-[1.03] transition duration-300 tracking-wide uppercase text-sm"
+                        >
+                            View My Expertise
+                        </a>
+                        <a
+                            href="#contact"
+                            class="px-8 py-3 border-2 border-primary-color text-primary-color font-semibold rounded-full hover:bg-blue-50 transform hover:scale-[1.03] transition duration-300 tracking-wide uppercase text-sm"
+                        >
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
 
-                <div class="order-1 md:order-2 flex justify-center relative">
-                    <div
-                        class="w-72 h-72 md:w-96 md:h-96 bg-white border-8 border-primary-color rounded-full overflow-hidden shadow-2xl relative transition-all duration-500 hover:border-accent-color"
-                    >
-                        <img
-                            src="https://drive.google.com/file/d/1KHYRFv0yVk3l2xJBt1wx20ivWCrhExtk/view?usp=drive_link"
-                            alt="Md Tamim Sarkar Tamim Profile Picture - Professional"
-                            onerror="this.src='https://placehold.co/1000x1000/1E3A8A/ffffff?text=Image+Loading+Error'"
-                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
-                        />
-                    </div>
-                    <div
-                        class="absolute bottom-5 right-5 md:right-10 p-3 bg-white primary-color rounded-full shadow-2xl transform rotate-6 transition duration-500 hover:rotate-0"
-                    >
-                        <svg
-                            class="w-8 h-8"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"
-                            ></path>
-                        </svg>
-                    </div>
-                </div>
-        </section>
+                <div class="order-1 md:order-2 flex justify-center relative">
+                    <div
+                        class="w-72 h-72 md:w-96 md:h-96 bg-white border-8 border-primary-color rounded-full overflow-hidden shadow-2xl relative transition-all duration-500 hover:border-accent-color"
+                    >
+                        <img
+                            src="https://drive.google.com/file/d/1KHYRFv0yVk3l2xJBt1wx20ivWCrhExtk/view?usp=drive_link"
+                            alt="Md Tamim Sarkar Tamim Profile Picture - Professional"
+                            onerror="this.src='https://placehold.co/1000x1000/1E3A8A/ffffff?text=Image+Loading+Error'"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+                        />
+                    </div>
+                    <div
+                        class="absolute bottom-5 right-5 md:right-10 p-3 bg-white primary-color rounded-full shadow-2xl transform rotate-6 transition duration-500 hover:rotate-0"
+                    >
+                        <svg
+                            class="w-8 h-8"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <hr class="max-w-7xl mx-auto border-gray-200" />
+        <hr class="max-w-7xl mx-auto border-gray-200" />
 
-        <section id="about" class="section-padding bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
-                    Who I Am
-                </h2>
-                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-                    A responsible and dedicated individual, committed to turning
-                    practical skills into a thriving independent business through
-                    continuous learning and digital proficiency.
-                </p>
+        <section id="about" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
+                    Who I Am
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    A responsible and dedicated individual, committed to turning
+                    practical skills into a thriving independent business through
+                    continuous learning and digital proficiency.
+                </p>
 
-                <div class="lg:flex lg:space-x-12">
-                    <div class="lg:w-2/3 space-y-8">
-                        <div
-                            class="p-8 bg-gray-50 rounded-xl shadow-custom border-l-4 border-accent-color"
-                        >
-                            <h3
-                                class="text-3xl font-bold text-gray-900 mb-4 flex items-center"
-                            >
-                                <span class="accent-color mr-3">🚀</span> Entrepreneurial
-                                Vision
-                            </h3>
-                            <p class="text-gray-700 leading-relaxed text-lg">
-                                My ultimate goal is to establish a successful online
-                                service-based business specializing in **Refrigeration, Air
-                                Conditioning, and Car Maintenance**. I aim to set a new
-                                standard for quality service, using **Digital Marketing** to
-                                reach a broader customer base and achieve true professional
-                                independence.
-                            </p>
-                        </div>
+                <div class="lg:flex lg:space-x-12">
+                    <div class="lg:w-2/3 space-y-8">
+                        <div
+                            class="p-8 bg-gray-50 rounded-xl shadow-custom border-l-4 border-accent-color"
+                        >
+                            <h3
+                                class="text-3xl font-bold text-gray-900 mb-4 flex items-center"
+                            >
+                                <span class="accent-color mr-3">🚀</span> Entrepreneurial
+                                Vision
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                                My ultimate goal is to establish a successful online
+                                service-based business specializing in **Refrigeration, Air
+                                Conditioning, and Car Maintenance**. I aim to set a new
+                                standard for quality service, using **Digital Marketing** to
+                                reach a broader customer base and achieve true professional
+                                independence.
+                            </p>
+                        </div>
 
-                        <div
-                            class="p-8 bg-gray-50 rounded-xl shadow-custom border-l-4 border-primary-color"
-                        >
-                            <h3
-                                class="text-3xl font-bold text-gray-900 mb-4 flex items-center"
-                            >
-                                <span class="primary-color mr-3">🌟</span> Core Principles
-                            </h3>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <ul
-                                    class="list-none text-gray-700 leading-relaxed text-lg space-y-2"
-                                >
-                                    <li>
-                                        <span class="font-bold primary-color"
-                                            >Work Ethic:</span
-                                        >
-                                        Hardworking & Highly Responsible
-                                    </li>
-                                    <li>
-                                        <span class="font-bold primary-color"
-                                            >Mindset:</span
-                                        >
-                                        Eager to Learn New Technologies
-                                    </li>
-                                </ul>
-                                <ul
-                                    class="list-none text-gray-700 leading-relaxed text-lg space-y-2"
-                                >
-                                    <li>
-                                        <span class="font-bold accent-color">Focus:</span>
-                                        Excellent Customer Service
-                                    </li>
-                                    <li>
-                                        <span class="font-bold accent-color"
-                                            >Interests:</span
-                                        >
-                                        Reading, Technology, English Improvement
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 mt-10 lg:mt-0">
-                        <div
-                            class="p-8 bg-white rounded-xl shadow-2xl border border-gray-100"
-                        >
-                            <h3
-                                class="text-2xl font-bold text-gray-800 mb-5 border-b pb-3 flex items-center primary-color"
-                            >
-                                <svg
-                                    class="w-6 h-6 mr-2"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M5.121 17.804A13.93 13.93 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    ></path>
-                                </svg>
-                                Personal Profile
-                            </h3>
-                            <ul class="space-y-4 text-lg text-gray-700">
-                                <li>
-                                    <span class="font-bold primary-color">Name:</span> Md Tamim
-                                    Sarkar Tamim
-                                </li>
-                                <li>
-                                    <span class="font-bold primary-color">Born:</span> 16 August
-                                    2005
-                                </li>
-                                <li>
-                                    <span class="font-bold primary-color">Location:</span>
-                                    Binodpur Bazar, Rajshahi
-                                </li>
-                                <li>
-                                    <span class="font-bold primary-color">Email:</span>
-                                    mdtamimsarkartamim@gmail.com
-                                </li>
-                                <li>
-                                    <span class="font-bold primary-color">Phone:</span>
-                                    01784658666
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div
+                            class="p-8 bg-gray-50 rounded-xl shadow-custom border-l-4 border-primary-color"
+                        >
+                            <h3
+                                class="text-3xl font-bold text-gray-900 mb-4 flex items-center"
+                            >
+                                <span class="primary-color mr-3">🌟</span> Core Principles
+                            </h3>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <ul
+                                    class="list-none text-gray-700 leading-relaxed text-lg space-y-2"
+                                >
+                                    <li>
+                                        <span class="font-bold primary-color"
+                                            >Work Ethic:</span
+                                        >
+                                        Hardworking & Highly Responsible
+                                    </li>
+                                    <li>
+                                        <span class="font-bold primary-color"
+                                            >Mindset:</span
+                                        >
+                                        Eager to Learn New Technologies
+                                    </li>
+                                </ul>
+                                <ul
+                                    class="list-none text-gray-700 leading-relaxed text-lg space-y-2"
+                                >
+                                    <li>
+                                        <span class="font-bold accent-color">Focus:</span>
+                                        Excellent Customer Service
+                                    </li>
+                                    <li>
+                                        <span class="font-bold accent-color"
+                                            >Interests:</span
+                                        >
+                                        Reading, Technology, English Improvement
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 mt-10 lg:mt-0">
+                        <div
+                            class="p-8 bg-white rounded-xl shadow-2xl border border-gray-100"
+                        >
+                            <h3
+                                class="text-2xl font-bold text-gray-800 mb-5 border-b pb-3 flex items-center primary-color"
+                            >
+                                <svg
+                                    class="w-6 h-6 mr-2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5.121 17.804A13.93 13.93 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
+                                </svg>
+                                Personal Profile
+                            </h3>
+                            <ul class="space-y-4 text-lg text-gray-700">
+                                <li>
+                                    <span class="font-bold primary-color">Name:</span> Md Tamim
+                                    Sarkar Tamim
+                                </li>
+                                <li>
+                                    <span class="font-bold primary-color">Born:</span> 16 August
+                                    2005
+                                </li>
+                                <li>
+                                    <span class="font-bold primary-color">Location:</span>
+                                    Binodpur Bazar, Rajshahi
+                                </li>
+                                <li>
+                                    <span class="font-bold primary-color">Email:</span>
+                                    mdtamimsarkartamim@gmail.com
+                                </li>
+                                <li>
+                                    <span class="font-bold primary-color">Phone:</span>
+                                    01784658666
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="education" class="section-padding bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-16">
-                    Academic Journey
-                </h2>
+        <section id="education" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-16">
+                    Academic Journey
+                </h2>
 
-                <div
-                    class="space-y-12 max-w-4xl mx-auto relative before:absolute before:left-1/2 before:-translate-x-1/2 before:top-0 before:h-full before:w-1 before:bg-gray-300"
-                >
-                    <div
-                        class="relative flex flex-col md:flex-row items-center md:items-start w-full"
-                    >
-                        <div class="md:w-1/2 md:pr-10 md:text-right">
-                            <h3 class="text-xl font-bold text-gray-900 primary-color mb-1">
-                                Alim (Higher Secondary)
-                            </h3>
-                            <p class="text-gray-600 italic">Budpara Alim Madrasa</p>
-                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.07</p>
-                        </div>
-                        <div
-                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full primary-bg ring-8 ring-white hidden md:block"
-                        ></div>
-                        <div class="md:w-1/2 md:pl-10 text-center md:text-left">
-                            <div class="md:mt-0 mt-2 text-xl font-bold accent-color">
-                                2024
-                            </div>
-                        </div>
-                    </div>
+                <div
+                    class="space-y-12 max-w-4xl mx-auto relative before:absolute before:left-1/2 before:-translate-x-1/2 before:top-0 before:h-full before:w-1 before:bg-gray-300"
+                >
+                    <div
+                        class="relative flex flex-col md:flex-row items-center md:items-start w-full"
+                    >
+                        <div class="md:w-1/2 md:pr-10 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-900 primary-color mb-1">
+                                Alim (Higher Secondary)
+                            </h3>
+                            <p class="text-gray-600 italic">Budpara Alim Madrasa</p>
+                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.07</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full primary-bg ring-8 ring-white hidden md:block"
+                        ></div>
+                        <div class="md:w-1/2 md:pl-10 text-center md:text-left">
+                            <div class="md:mt-0 mt-2 text-xl font-bold accent-color">
+                                2024
+                            </div>
+                        </div>
+                    </div>
 
-                    <div
-                        class="relative flex flex-col md:flex-row-reverse items-center md:items-start w-full"
-                    >
-                        <div class="md:w-1/2 md:pl-10 md:text-left">
-                            <h3 class="text-xl font-bold text-gray-900 primary-color mb-1">
-                                Dakhil (Secondary)
-                            </h3>
-                            <p class="text-gray-600 italic">Budpara Alim Madrasa</p>
-                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.50</p>
-                        </div>
-                        <div
-                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full primary-bg ring-8 ring-white hidden md:block"
-                        ></div>
-                        <div class="md:w-1/2 md:pr-10 text-center md:text-right">
-                            <div class="md:mt-0 mt-2 text-xl font-bold accent-color">
-                                2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div
+                        class="relative flex flex-col md:flex-row-reverse items-center md:items-start w-full"
+                    >
+                        <div class="md:w-1/2 md:pl-10 md:text-left">
+                            <h3 class="text-xl font-bold text-gray-900 primary-color mb-1">
+                                Dakhil (Secondary)
+                            </h3>
+                            <p class="text-gray-600 italic">Budpara Alim Madrasa</p>
+                            <p class="text-sm text-gray-500 mt-1">Result: GPA 4.50</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full primary-bg ring-8 ring-white hidden md:block"
+                        ></div>
+                        <div class="md:w-1/2 md:pr-10 text-center md:text-right">
+                            <div class="md:mt-0 mt-2 text-xl font-bold accent-color">
+                                2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="skills" class="section-padding bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
-                    Skill Set
-                </h2>
-                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-                    A blend of essential hands-on technical abilities and modern digital
-                    capabilities required for running a service business.
-                </p>
+        <section id="skills" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
+                    Skill Set
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    A blend of essential hands-on technical abilities and modern digital
+                    capabilities required for running a service business.
+                </p>
 
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <div>
-                        <h3
-                            class="text-3xl font-bold text-gray-900 mb-8 primary-color flex items-center"
-                        >
-                            <svg
-                                class="w-7 h-7 mr-2"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-3a1 1 0 00-1-1h1a2 2 0 100-4H3a1 1 0 00-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                                ></path>
-                            </svg>
-                            Technical & Trade Expertise
-                        </h3>
-                        <div class="grid grid-cols-2 gap-6">
-                            <div
-                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-primary-bg hover:text-white transition duration-300"
-                            >
-                                <p class="font-semibold text-lg">Refrigeration & A/C</p>
-                                <p
-                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
-                                >
-                                    Servicing, Repair & Installation
-                                </p>
-                            </div>
-                            <div
-                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-primary-bg hover:text-white transition duration-300"
-                            >
-                                <p class="font-semibold text-lg">Automotive Maintenance</p>
-                                <p
-                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
-                                >
-                                    Car Upkeep & Basic Repair
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3
+                            class="text-3xl font-bold text-gray-900 mb-8 primary-color flex items-center"
+                        >
+                            <svg
+                                class="w-7 h-7 mr-2"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-3a1 1 0 00-1-1h1a2 2 0 100-4H3a1 1 0 00-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                                ></path>
+                            </svg>
+                            Technical & Trade Expertise
+                        </h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div
+                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-primary-bg hover:text-white transition duration-300"
+                            >
+                                <p class="font-semibold text-lg">Refrigeration & A/C</p>
+                                <p
+                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
+                                >
+                                    Servicing, Repair & Installation
+                                </p>
+                            </div>
+                            <div
+                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-primary-bg hover:text-white transition duration-300"
+                            >
+                                <p class="font-semibold text-lg">Automotive Maintenance</p>
+                                <p
+                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
+                                >
+                                    Car Upkeep & Basic Repair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div>
-                        <h3
-                            class="text-3xl font-bold text-gray-900 mb-8 accent-color flex items-center"
-                        >
-                            <svg
-                                class="w-7 h-7 mr-2"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9 19V6l12-3v14c0 1.657-3.582 3-8 3s-8-1.343-8-3V6l12-3v14c0 1.657-3.582 3-8 3s-8-1.343-8-3V6l12-3z"
-                                ></path>
-                            </svg>
-                            Digital & Communication
-                        </h3>
-                        <div class="grid grid-cols-2 gap-6">
-                            <div
-                                class="p-4 bg-gray-500 rounded-lg shadow-custom hover:bg-accent-color hover:text-white transition duration-300"
-                            >
-                                <p class="font-semibold text-lg">Social Media Marketing</p>
-                                <p
-                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
-                                >
-                                    Ad Campaigns & Content Strategy
-                                </p>
-                            </div>
-                            <div
-                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-accent-color hover:text-white transition duration-300"
-                            >
-                                <p class="font-semibold text-lg">MS Office & Basic IT</p>
-                                <p
-                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
-                                >
-                                    Professional Documentation
-                                </p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3
+                            class="text-3xl font-bold text-gray-900 mb-8 accent-color flex items-center"
+                        >
+                            <svg
+                                class="w-7 h-7 mr-2"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 19V6l12-3v14c0 1.657-3.582 3-8 3s-8-1.343-8-3V6l12-3v14c0 1.657-3.582 3-8 3s-8-1.343-8-3V6l12-3z"
+                                ></path>
+                            </svg>
+                            Digital & Communication
+                        </h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div
+                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-accent-color hover:text-white transition duration-300"
+                            >
+                                <p class="font-semibold text-lg">Social Media Marketing</p>
+                                <p
+                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
+                                >
+                                    Ad Campaigns & Content Strategy
+                                </p>
+                            </div>
+                            <div
+                                class="p-4 bg-gray-50 rounded-lg shadow-custom hover:bg-accent-color hover:text-white transition duration-300"
+                            >
+                                <p class="font-semibold text-lg">MS Office & Basic IT</p>
+                                <p
+                                    class="text-sm text-gray-500 hover:text-white transition duration-300"
+                                >
+                                    Professional Documentation
+                                </p>
+                            </div>
+                        </div>
 
-                        <div class="mt-8 text-center">
-                            <h4 class="text-xl font-bold text-gray-800 mb-3">Languages:</h4>
-                            <div class="flex flex-wrap justify-center gap-3">
-                                <span
-                                    class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
-                                    >Bengali (Native)</span
-                                >
-                                <span
-                                    class="inline-block bg-green-100 text-green-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
-                                    >English (Intermediate)</span
-                                >
-                                <span
-                                    class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
-                                    >Arabic (Reading/Basic)</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="mt-8 text-center">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Languages:</h4>
+                            <div class="flex flex-wrap justify-center gap-3">
+                                <span
+                                    class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                                    >Bengali (Native)</span
+                                >
+                                <span
+                                    class="inline-block bg-green-100 text-green-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                                    >English (Intermediate)</span
+                                >
+                                <span
+                                    class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-4 py-1.5 rounded-full shadow-md"
+                                    >Arabic (Reading/Basic)</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="projects" class="section-padding bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
-                    Service & Strategy Focus
-                </h2>
-                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-                    Showcasing the core business areas and the dual-skill approach
-                    (Technical + Digital) to market success.
-                </p>
+        <section id="projects" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
+                    Service & Strategy Focus
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    Showcasing the core business areas and the dual-skill approach
+                    (Technical + Digital) to market success.
+                </p>
 
-                <div class="grid md:grid-cols-3 gap-10">
-                    <div
-                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-primary-color"
-                    >
-                        <img
-                            src="https://placehold.co/600x400/1E3A8A/ffffff?text=AC+Service+Excellence"
-                            alt="Refrigeration & A/C Service"
-                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
-                        />
-                        <div class="p-6">
-                            <h3
-                                class="text-2xl font-bold text-gray-900 mb-3 primary-color"
-                            >
-                                R&AC Service Excellence
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                **Focus:** Delivering guaranteed quality in installation,
-                                preventive maintenance, and complex diagnostics for both
-                                residential and commercial cooling units.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full"
-                                    >Precision Repair</span
-                                >
-                                <span
-                                    class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full"
-                                    >Customer Trust</span
-                                >
-                            </div>
-                        </div>
-                    </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div
+                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-primary-color"
+                    >
+                        <img
+                            src="https://placehold.co/600x400/1E3A8A/ffffff?text=AC+Service+Excellence"
+                            alt="Refrigeration & A/C Service"
+                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div class="p-6">
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-3 primary-color"
+                            >
+                                R&AC Service Excellence
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                **Focus:** Delivering guaranteed quality in installation,
+                                preventive maintenance, and complex diagnostics for both
+                                residential and commercial cooling units.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full"
+                                    >Precision Repair</span
+                                >
+                                <span
+                                    class="text-xs font-medium bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full"
+                                    >Customer Trust</span
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-                    <div
-                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-accent-color"
-                    >
-                        <img
-                            src="https://placehold.co/600x400/3B82F6/ffffff?text=Car+Maintenance+Pro"
-                            alt="Automotive Maintenance & Care"
-                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
-                        />
-                        <div class="p-6">
-                            <h3
-                                class="text-2xl font-bold text-gray-900 mb-3 accent-color"
-                            >
-                                Comprehensive Automotive Care
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                **Focus:** Offering reliable car maintenance services,
-                                ensuring vehicle longevity and peak performance. Strong
-                                hands-on driving and repair experience.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-xs font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
-                                    >Vehicle Diagnostics</span
-                                >
-                                <span
-                                    class="text-xs font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
-                                    >Operational Know-how</span
-                                >
-                            </div>
-                        </div>
-                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-accent-color"
+                    >
+                        <img
+                            src="https://placehold.co/600x400/3B82F6/ffffff?text=Car+Maintenance+Pro"
+                            alt="Automotive Maintenance & Care"
+                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div class="p-6">
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-3 accent-color"
+                            >
+                                Comprehensive Automotive Care
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                **Focus:** Offering reliable car maintenance services,
+                                ensuring vehicle longevity and peak performance. Strong
+                                hands-on driving and repair experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="text-xs font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
+                                    >Vehicle Diagnostics</span
+                                >
+                                <span
+                                    class="text-xs font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
+                                    >Operational Know-how</span
+                                >
+                            </div>
+                        </div>
+                    </div>
 
-                    <div
-                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-gray-400"
-                    >
-                        <img
-                            src="https://placehold.co/600x400/A0A0A0/ffffff?text=Digital+Marketing+Launch"
-                            alt="Digital Marketing Strategy"
-                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
-                        />
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                                Online Business Strategy
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                **Focus:** Utilizing social media marketing and online
-                                advertising to build brand visibility and drive service
-                                bookings for the technical business.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
-                                    >SM Advertising</span
-                                >
-                                <span
-                                    class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
-                                    >Customer Acquisition</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div
+                        class="bg-white rounded-xl shadow-xl overflow-hidden group hover:shadow-2xl transition duration-500 border-t-8 border-gray-400"
+                    >
+                        <img
+                            src="https://placehold.co/600x400/A0A0A0/ffffff?text=Digital+Marketing+Launch"
+                            alt="Digital Marketing Strategy"
+                            class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                                Online Business Strategy
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                **Focus:** Utilizing social media marketing and online
+                                advertising to build brand visibility and drive service
+                                bookings for the technical business.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                                    >SM Advertising</span
+                                >
+                                <span
+                                    class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full"
+                                    >Customer Acquisition</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="py-20 bg-white border-t-4 border-b-4 border-accent-color">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
-                    Ready to Discuss Your Project?
-                </h2>
-                <p class="text-xl text-gray-700 opacity-90 mb-8 max-w-2xl mx-auto">
-                    Whether it's a technical service need or a business collaboration,
-                    I'm ready to engage. Let's create something successful.
-                </p>
-                <a
-                    href="#contact"
-                    class="px-10 py-4 primary-bg text-white font-bold rounded-full shadow-xl hover:primary-hover transform hover:scale-[1.05] transition duration-300 uppercase tracking-wider text-lg"
-                >
-                    Message Me Now
-                </a>
-            </div>
-        </section>
+        <section class="py-20 bg-white border-t-4 border-b-4 border-accent-color">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+                    Ready to Discuss Your Project?
+                </h2>
+                <p class="text-xl text-gray-700 opacity-90 mb-8 max-w-2xl mx-auto">
+                    Whether it's a technical service need or a business collaboration,
+                    I'm ready to engage. Let's create something successful.
+                </p>
+                <a
+                    href="#contact"
+                    class="px-10 py-4 primary-bg text-white font-bold rounded-full shadow-xl hover:primary-hover transform hover:scale-[1.05] transition duration-300 uppercase tracking-wider text-lg"
+                >
+                    Message Me Now
+                </a>
+            </div>
+        </section>
 
-                <section id="contact" class="section-padding bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
-                    Get In Touch
-                </h2>
-                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-                    I am actively seeking opportunities and always open to connecting
-                    with fellow entrepreneurs and technical experts.
-                </p>
+        <section id="contact" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center text-gray-900 mb-4">
+                    Get In Touch
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    I am actively seeking opportunities and always open to connecting
+                    with fellow entrepreneurs and technical experts.
+                </p>
 
-                <div
-                    class="max-w-xl mx-auto p-10 bg-gray-50 rounded-xl shadow-2xl border border-gray-200"
-                >
-                    <form
-                        id="contact-form"
-                        action="https://formsubmit.co/mdtamimsarkartamim@gmail.com"
-                        method="POST"
-                        class="space-y-6"
-                    >
-                                                <input
-                            type="hidden"
-                            name="_subject"
-                            value="New Portfolio Contact: Tamim Sarkar"
-                        />
-                        <input type="hidden" name="_captcha" value="false" />
-                                                <input type="hidden" name="_next" value="https://yourdomain.com/index.html" />
+                <div
+                    class="max-w-xl mx-auto p-10 bg-gray-50 rounded-xl shadow-2xl border border-gray-200"
+                >
+                    <form
+                        id="contact-form"
+                        action="https://formsubmit.co/mdtamimsarkartamim@gmail.com"
+                        method="POST"
+                        class="space-y-6"
+                    >
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New Portfolio Contact: Tamim Sarkar"
+                        />
+                        <input type="hidden" name="_captcha" value="false" />
+                        
+                        <input type="hidden" name="_next" value="https://mdtamimsarkartamim404.github.io/" />
 
-                        <div>
-                            <label
-                                for="name"
-                                class="block text-sm font-medium text-gray-700"
-                                >Full Name</label
-                            >
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                required
-                                placeholder="Your Name"
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                for="email"
-                                class="block text-sm font-medium text-gray-700"
-                                >Email Address</label
-                            >
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                required
-                                placeholder="name@example.com"
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                for="message"
-                                class="block text-sm font-medium text-gray-700"
-                                >Your Message</label
-                            >
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="5"
-                                required
-                                placeholder="How can I help you achieve your goals?"
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
-                            ></textarea>
-                        </div>
-                        <div>
-                            <button
-                                type="submit"
-                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-bold text-white primary-bg hover:primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-color transition duration-300 transform hover:scale-[1.01] uppercase tracking-wider"
-                            >
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+                        <div>
+                            <label
+                                for="name"
+                                class="block text-sm font-medium text-gray-700"
+                                >Full Name</label
+                            >
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                placeholder="Your Name"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="email"
+                                class="block text-sm font-medium text-gray-700"
+                                >Email Address</label
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                placeholder="name@example.com"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="message"
+                                class="block text-sm font-medium text-gray-700"
+                                >Your Message</label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                placeholder="How can I help you achieve your goals?"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-primary-color focus:border-primary-color transition duration-300"
+                            ></textarea>
+                        </div>
+                        <div>
+                            <button
+                                type="submit"
+                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-lg font-bold text-white primary-bg hover:primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-color transition duration-300 transform hover:scale-[1.01] uppercase tracking-wider"
+                            >
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer class="bg-gray-900 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h4 class="text-2xl font-bold primary-color mb-3">Tamim Sarkar</h4>
-            <p class="text-gray-400 mb-8 max-w-md mx-auto">
-                Skilled in R&AC, Car Maintenance, and Digital Marketing to build a
-                successful service business.
-            </p>
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h4 class="text-2xl font-bold primary-color mb-3">Tamim Sarkar</h4>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">
+                Skilled in R&AC, Car Maintenance, and Digital Marketing to build a
+                successful service business.
+            </p>
 
-            <div class="flex justify-center space-x-6 mb-8">
-                
-                <a
-                    href="https://www.facebook.com/mdtamimsarkartamim6"
-                    target="_blank"
-                    class="transition duration-300 social-link"
-                    aria-label="Facebook Profile"
-                >
-                    <svg
-                        class="w-7 h-7"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.493v-9.294h-3.13v-3.626h3.13v-2.193c0-3.1 1.89-4.788 4.659-4.788 1.325 0 2.464.099 2.793.143v3.235h-1.921c-1.5 0-1.791.716-1.791 1.764v2.321h3.61l-.47 3.626h-3.14l.004 9.294h6.115c.732 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
-                        />
-                    </svg>
-                </a>
-                <a
-                    href="https://www.instagram.com/mdtamimsarkartamim404/"
-                    target="_blank"
-                    class="transition duration-300 social-link"
-                    aria-label="Instagram Profile"
-                >
-                    <svg
-                        class="w-7 h-7"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M12 5C8.134 5 5 8.134 5 12s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm0 12c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm5-8h.01V9h-.01v-.01zM18 2H6C3.791 2 2 3.791 2 6v12c0 2.209 1.791 4 4 4h12c2.209 0 4-1.791 4-4V6c0-2.209-1.791-4-4-4zm2 16c0 1.103-.897 2-2 2H6c-1.103 0-2-.897-2-2V6c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v12z"
-                        />
-                    </svg>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/sk-tamim-ikbol/"
-                    target="_blank"
-                    class="transition duration-300 social-link"
-                    aria-label="LinkedIn Profile"
-                >
-                    <svg
-                        class="w-7 h-7"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.568-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.723 7 3.559v5.676z"
-                        />
-                    </svg>
-                </a>
-            </div>
+            <div class="flex justify-center space-x-6 mb-8">
+                
+                <a
+                    href="https://www.facebook.com/mdtamimsarkartamim6"
+                    target="_blank"
+                    class="transition duration-300 social-link"
+                    aria-label="Facebook Profile"
+                >
+                    <svg
+                        class="w-7 h-7"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.493v-9.294h-3.13v-3.626h3.13v-2.193c0-3.1 1.89-4.788 4.659-4.788 1.325 0 2.464.099 2.793.143v3.235h-1.921c-1.5 0-1.791.716-1.791 1.764v2.321h3.61l-.47 3.626h-3.14l.004 9.294h6.115c.732 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                        />
+                    </svg>
+                </a>
+                <a
+                    href="https://www.instagram.com/mdtamimsarkartamim404/"
+                    target="_blank"
+                    class="transition duration-300 social-link"
+                    aria-label="Instagram Profile"
+                >
+                    <svg
+                        class="w-7 h-7"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M12 5C8.134 5 5 8.134 5 12s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm0 12c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm5-8h.01V9h-.01v-.01zM18 2H6C3.791 2 2 3.791 2 6v12c0 2.209 1.791 4 4 4h12c2.209 0 4-1.791 4-4V6c0-2.209-1.791-4-4-4zm2 16c0 1.103-.897 2-2 2H6c-1.103 0-2-.897-2-2V6c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v12z"
+                        />
+                    </svg>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/sk-tamim-ikbol/"
+                    target="_blank"
+                    class="transition duration-300 social-link"
+                    aria-label="LinkedIn Profile"
+                >
+                    <svg
+                        class="w-7 h-7"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.568-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.723 7 3.559v5.676z"
+                        />
+                    </svg>
+                </a>
+            </div>
 
-            <p class="text-gray-500 text-sm">
-                &copy; <span id="current-year-footer"></span> Md Tamim Sarkar Tamim.
-                All rights reserved.
-            </p>
-        </div>
-    </footer>
+            <p class="text-gray-500 text-sm">
+                &copy; <span id="current-year-footer"></span> Md Tamim Sarkar Tamim.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-    <script>
-        // Set the current year in the footer
-        document.getElementById("current-year-footer").textContent =
-            new Date().getFullYear();
+    <script>
+        // Set the current year in the footer
+        document.getElementById("current-year-footer").textContent =
+            new Date().getFullYear();
 
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-        mobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
 
-        // Smooth Scrolling & Mobile Menu Close
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            if (anchor.getAttribute("href").length > 1) {
-                anchor.addEventListener("click", function (e) {
-                    // Only prevent default if it's not the top of the page (a href="#")
-                    if (this.getAttribute("href") !== "#") {
-                        e.preventDefault();
-                    }
+        // Smooth Scrolling & Mobile Menu Close
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            if (anchor.getAttribute("href").length > 1) {
+                anchor.addEventListener("click", function (e) {
+                    // Only prevent default if it's not the top of the page (a href="#")
+                    if (this.getAttribute("href") !== "#") {
+                        e.preventDefault();
+                    }
 
-                    const targetId = this.getAttribute("href");
-                    const targetElement = document.querySelector(targetId);
+                    const targetId = this.getAttribute("href");
+                    const targetElement = document.querySelector(targetId);
 
-                    if (targetElement) {
-                        // Use scrollIntoView with smooth behavior
-                        targetElement.scrollIntoView({
-                            behavior: "smooth",
-                        });
+                    if (targetElement) {
+                        // Use scrollIntoView with smooth behavior
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                        });
 
-                        // Close mobile menu if open
-                        if (!mobileMenu.classList.contains("hidden")) {
-                            mobileMenu.classList.add("hidden");
-                        }
-                    }
-                });
-            }
-        });
-
-        // 🛑 IMPORTANT CORRECTION: Removed the redundant JavaScript code 
-        // that attempted to dynamically set the _next field. FormSubmit 
-        // will now use the URL hard-coded in the HTML above.
-    </script>
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains("hidden")) {
+                            mobileMenu.classList.add("hidden");
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
