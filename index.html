@@ -77,7 +77,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-950">
+<body class="bg-gray-900">
 
     <!-- Header / Navigation -->
     <header class="bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50 shadow-lg border-b border-gray-800">
@@ -164,9 +164,9 @@
                     <div>
                         <h3 class="text-2xl font-semibold text-indigo-400 mb-4 flex items-center"><i class="fas fa-user-check mr-3"></i>My Qualities</h3>
                         <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4 text-base">
-                            <li>**Hardworking & Responsible:** Dedicated to completing tasks with diligence and accountability.</li>
-                            <li>**Eager to Learn New Technologies:** Constantly seeking to update skills in modern tech and methodologies.</li>
-                            <li>**Customer Service Oriented:** Committed to providing excellent service and ensuring client satisfaction.</li>
+                            <li><span class="font-semibold text-white">Hardworking & Responsible:</span> Dedicated to completing tasks with diligence and accountability.</li>
+                            <li><span class="font-semibold text-white">Eager to Learn New Technologies:</span> Constantly seeking to update skills in modern tech and methodologies.</li>
+                            <li><span class="font-semibold text-white">Customer Service Oriented:</span> Committed to providing excellent service and ensuring client satisfaction.</li>
                         </ul>
                     </div>
                 </div>
@@ -320,8 +320,8 @@
                     <h3 class="text-2xl font-semibold text-indigo-400 mb-3 flex items-center"><i class="fas fa-cogs mr-3"></i>Technical Service & Training</h3>
                     <p class="text-gray-300 italic mb-4">Hands-on Expertise & Service Pilot</p>
                     <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4 text-base">
-                        <li>**Automobile Focus:** Performed routine maintenance (oil changes, fluid checks, tire rotation) on personal/family vehicles, demonstrating practical vehicle upkeep skills.</li>
-                        <li>**R&AC Focus:** Executed basic cleaning and preventative maintenance on residential AC units, successfully enhancing efficiency and prolonging lifespan.</li>
+                        <li><span class="font-semibold text-white">Automobile Focus:</span> Performed routine maintenance (oil changes, fluid checks, tire rotation) on personal/family vehicles, demonstrating practical vehicle upkeep skills.</li>
+                        <li><span class="font-semibold text-white">R&AC Focus:</span> Executed basic cleaning and preventative maintenance on residential AC units, successfully enhancing efficiency and prolonging lifespan.</li>
                     </ul>
                 </div>
 
@@ -330,8 +330,8 @@
                     <h3 class="text-2xl font-semibold text-indigo-400 mb-3 flex items-center"><i class="fas fa-globe mr-3"></i>Digital Business Foundation</h3>
                     <p class="text-gray-300 italic mb-4">Establishing Online Presence & Marketing</p>
                     <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4 text-base">
-                        <li>**Online Presence:** Designed and managed social media pages (Facebook, Instagram) to showcase technical services and attract service requests in the Rajshahi area.</li>
-                        <li>**Marketing Strategy:** Applied knowledge of targeted advertising and basic Social Media Security to build a professional and secure online platform.</li>
+                        <li><span class="font-semibold text-white">Online Presence:</span> Designed and managed social media pages (Facebook, Instagram) to showcase technical services and attract service requests in the Rajshahi area.</li>
+                        <li><span class="font-semibold text-white">Marketing Strategy:</span> Applied knowledge of targeted advertising and basic Social Media Security to build a professional and secure online platform.</li>
                     </ul>
                 </div>
             </div>
@@ -432,7 +432,8 @@
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
             // --- Smooth Scrolling for Navigation ---
-            const menuLinks = document.querySelectorAll('#desktop-menu a[href^="#"]');
+            // Select ALL anchor links in the header that start with #
+            const menuLinks = document.querySelectorAll('header a[href^="#"]'); 
             
             function scrollToSection(event) {
                 event.preventDefault();
